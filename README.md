@@ -10,7 +10,7 @@
 - SCREEN:1920*1080(已更换友达4k显示屏，体验很好)
 
 # 当前系统版本
-- Catalina 10.15.6
+- BigSur 11.0.1
 - EFI引导版本：官方opencore0.6.1 (引导已配置只扫描macos分区，不使用opencore引导win10,故不使用主题。bios默认第一启动为opencore，需要进win在开机时按f11选系统)
 
 # 驱动情况：
@@ -37,7 +37,7 @@
       VT-d = Disabled
       Boot
       Fastboot = disabled
-      Boot mode = UEFI with CSM
+      Boot mode = UEFI
       Security
 
       Secure boot = disabled
@@ -51,6 +51,6 @@
                 如果是4k屏，还要：
                       1.dvmt allocated设置为64m,最大值设置为max
                       2.above 4g encoding 开启 
-                      3.启动参数里加上-igfxmlr
+                      3.启动参数里加上-igfxmlr(如果是BIGSUR,需要WEG1.4.6以上，需要额外添加-igfxmpc，igfxcflbklt=1需要替换为-igfxblr)
                      
                 另外建议：使用XTU测试最佳的cpu电压偏移值，并设置到bios中，会让8750h的发热情况得到极大的改善      
