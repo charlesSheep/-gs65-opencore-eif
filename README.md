@@ -5,7 +5,7 @@
 - GPU:IGPU-UHD630|NVIDA-GTX1060
 - Memory:16GB(8GB*2)
 - Ethernet:KILLER E2500
-- WIRELESS:INTEL 9560AC(已更换dw1820a)
+- WIRELESS:INTEL 9560AC(已更换bcm94360cs2)
 - HardDrive:三星pm981(已更换sm961,并添加一块东芝512ssd用于安装win10)
 - SCREEN:1920*1080(已更换友达4k显示屏，体验很好)
 
