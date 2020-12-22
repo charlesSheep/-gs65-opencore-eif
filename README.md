@@ -11,6 +11,7 @@
 
 # 当前系统版本
 - BigSur 11.0.1
+![image](https://github.com/charlesSheep/-gs65-opencore-eif/blob/master/IMG.png?raw=true)
 - EFI引导版本：官方opencore0.6.4 (引导已配置只扫描macos分区，不使用opencore引导win10,故不使用主题。bios默认第一启动为opencore，需要进win在开机时按f11选系统)
 
 # 驱动情况：
