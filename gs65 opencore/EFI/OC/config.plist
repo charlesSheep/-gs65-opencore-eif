@@ -122,7 +122,7 @@
 				<key>Comment</key>
 				<string>isolate win harddisk</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-IWINHD.aml</string>
 			</dict>
@@ -431,6 +431,25 @@
 				<data>IgAAAA==</data>
 				<key>model</key>
 				<string>Cannon Lake PCH cAVS</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>model</key>
+				<string>Intel UHD Graphics 630 (Mobile)</string>
+				<key>AAPL,ig-platform-id</key>
+				<data>AACbPg==</data>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>framebuffer-flags</key>
+				<data>CxMgAA==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
