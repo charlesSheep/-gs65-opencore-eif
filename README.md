@@ -48,6 +48,7 @@
                 1.关闭cfg lock
                 2.开启cpu speed shift technology
                 3.usb 设置里的 XHCI hand off 开启 
+                4.开启雷电接口的设置
 
                 如果是4k屏，还要：
                       1.dvmt allocated设置为64m,最大值设置为max
