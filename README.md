@@ -11,6 +11,7 @@
 
 # 当前系统版本
 - BigSur 11.0.1
+![image](https://github.com/charlesSheep/-gs65-opencore-eif/blob/master/IMG.png?raw=true)
 - EFI引导版本：官方opencore0.6.4 (引导已配置只扫描macos分区，不使用opencore引导win10,故不使用主题。bios默认第一启动为opencore，需要进win在开机时按f11选系统)
 
 # 驱动情况：
@@ -19,8 +20,8 @@
 
 # 存在的问题
 - 电池在开机的情况下，完全放电后，导致断电关机，bios设置会被重置。
-- 无法在wifi界面直接点击连接iphone热点，显示设备可能未开热点或未处于范围内，不确定是否是系统设置或无线网卡的问题。
-- dw1820a 在连接2.4g wifi的情况下，会与蓝牙产生干扰，导致耳机声音不畅；使用5g wifi则没有此问题，蓝牙表现非常稳定(win10下一切正常)
+- 根据一位机友的分享，目前通过转接软排线上了BCM94360CS2，功能上很稳定，WIN下也很稳定，不会有莫名的问题发生，不过2.4G还是和蓝牙有一定干扰，要离得很近才可以
+  如果使用第三方博通卡或者原装INTEL网卡(BigSur上没有试过)，要勾选相应驱动
 
 # 推荐的小工具
 - 键盘灯可以使用 https://github.com/ErrorErrorError/SSKeyboardHue 这个来控制，软件退出的时候会报错，不过不影响使用。
