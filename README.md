@@ -10,7 +10,7 @@
 - SCREEN:1920*1080(已更换友达4k显示屏，体验很好)
 
 # 当前系统版本
-- BigSur 11.0.1
+- BigSur 11.1（目前已经使用了三天了，感觉挺稳了，可以食用了）
 ![image](https://github.com/charlesSheep/-gs65-opencore-eif/blob/master/IMG.png?raw=true)
 - EFI引导版本：官方opencore0.6.4 (引导已配置只扫描macos分区，不使用opencore引导win10,故不使用主题。bios默认第一启动为opencore，需要进win在开机时按f11选系统)
 
