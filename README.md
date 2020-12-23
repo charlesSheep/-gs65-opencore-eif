@@ -22,7 +22,15 @@
 - 电池在开机的情况下，完全放电后，导致断电关机，bios设置会被重置。
 - 根据一位机友的分享，目前通过转接软排线上了BCM94360CS2，功能上很稳定，WIN下也很稳定，不会有莫名的问题发生，不过2.4G还是和蓝牙有一定干扰，要离得很近才可以
   如果使用第三方博通卡或者原装INTEL网卡(BigSur上没有试过)，要勾选相应驱动
-
+# 安装要注意的问题和说明
+- 在系统安装和机型信息调整搞定前，不要登录APPID，可能会因为机器信息的改变导致ID被拉黑，机器信息确定后最好不要再改变了。如果不能登录FACETIME和IMESSAGE,可以在官网上联系客服搞定。
+- 此EFI设置里showpicker取消了，开机后按住ALT键可以进入OC界面
+- 显卡设备注入那里最好补上自己的EDID（不过不补可能也不会出现问题，我在换屏之前没有加EDID也没出现异常）
+- EFI里放了博通和INTEL的网卡驱动，我现在使用原生卡了，就都取消了。
+- ACPI里的SSDT-BATT-R.AML 是电池信息的热补丁，可以配合ACPIBATTERYMANAGER.KEXT使用，还要勾选PACTCH里的几个方法名替换补丁，也可以直接用SMCBATTERYMANAGER.KEXT,效果差不多的，只不过使用补丁的话，电池电量信息更新更快，好像是实时的。
+- ACPI里SSDT-IWINHD.AML是在MACOS下屏蔽WIN硬盘的，如果需要使用，要更改里面的PCI的位置信息
+- ACPI里的SSDT-BATT-R.AML 是电池信息的热补丁，可以配合ACPIBATTERYMANAGER.KEXT使用，还要勾选PACTCH里的几个方法名替换补丁，也可以直接用SMCBATTERYMANAGER.KEXT,效果差不多的，只不过使用补丁的话，电池电量信息更新更快，好像是实时的。
+- VOODOOPS2CONTROLLER.KEXT最好使用2.1.5的版本，更新版本会在睡眠唤醒后出现一些问题，搞不懂是什么原因。
 # 推荐的小工具
 - 键盘灯可以使用 https://github.com/ErrorErrorError/SSKeyboardHue 这个来控制，软件退出的时候会报错，不过不影响使用。
 - 蓝牙设备靠近解锁，远离锁定小工具BLELock:https://github.com/ts1/BLEUnlock (亲测非常实用)
