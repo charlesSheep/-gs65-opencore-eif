@@ -32,7 +32,7 @@
 - ACPI里SSDT-IWINHD.AML是在MACOS下屏蔽WIN硬盘的，如果需要使用，要更改里面的PCI的位置信息
 - ~~VOODOOPS2CONTROLLER.KEXT最好使用2.1.5的版本，更新版本会在睡眠唤醒后出现一些问题，搞不懂是什么原因。~~
    (经测试，最新的2.2.0版本已经没有异常了，滑动似乎更好一些，不过command和option的键位交换了，需要在系统的修饰键设置里还原下。)
-- 热心机友提供了9代GS65的USB定制驱动USBPorts164.kext,机友亲测同时机型需要设置为16.4 9代的
+- 热心机友提供了9代GS65的USB定制驱动USBPorts164.kext,机友亲测同时机型需要设置为16.4 9代的mackbookpro
 # 推荐的小工具
 - 键盘灯可以使用 https://github.com/ErrorErrorError/SSKeyboardHue 这个来控制，软件退出的时候会报错，不过不影响使用。
 - 蓝牙设备靠近解锁，远离锁定小工具BLELock:https://github.com/ts1/BLEUnlock (亲测非常实用)
