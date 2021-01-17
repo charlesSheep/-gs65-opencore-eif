@@ -122,7 +122,7 @@
 				<key>Comment</key>
 				<string>isolate win harddisk</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-IWINHD.aml</string>
 			</dict>
