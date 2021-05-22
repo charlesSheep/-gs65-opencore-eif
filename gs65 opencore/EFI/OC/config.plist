@@ -1545,9 +1545,9 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-cdfon -igfxblr agdpmod=vit9696 -lilubetaall  debug=0x100</string>
+				<string>-cdfon -igfxblr agdpmod=vit9696 -lilubetaall  debug=0x100 -v</string>
 				<key>csr-active-config</key>
-				<data>/w8AAA==</data>
+				<data>AAAAAA==</data>
 				<key>run-efi-updater</key>
 				<string>No</string>
 			</dict>

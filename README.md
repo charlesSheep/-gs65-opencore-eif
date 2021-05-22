@@ -10,7 +10,7 @@
 - SCREEN:1920*1080(已更换友达4k显示屏，体验很好)
 
 # 当前系统版本
-- BigSur 11.1（目前已经使用了三天了，感觉挺稳了，可以食用了）
+- BigSur 11.3.1
 ![image](https://github.com/charlesSheep/-gs65-opencore-eif/blob/master/IMG.png?raw=true)
 - EFI引导版本：官方opencore0.6.4 (引导已配置只扫描macos分区，不使用opencore引导win10,故不使用主题。bios默认第一启动为opencore，需要进win在开机时按f11选系统)
 
@@ -41,6 +41,14 @@
 - 目前稳定使用一段时间了，除了独显无法驱动，基本没有什么挑锡了，随时开盖用合盖放一边，就像白果一样,感觉睡眠比win还要稳定好用，而且配合BLEunlock,只要手机在身边，开盖就直接用了，不用输密码，很舒适。以前win睡眠放包里无故唤醒，那家伙烫得。mac功耗控制也很好，一般使用，频率在0.8-2.0之间，用个5小时还是完全可以的，相对众多的标压u的本，已经不错了。
 - 由于更换了4k屏，使用体验应该和xps系列的黑果使用体验相媲美了，而且相比于xps没有多余的不可驱动的硬件，像指纹，读卡器什么的，对强迫症友好，哈哈。。。。 如果打算认真使用黑果，还是非常推荐换4k屏，换屏后动画可能会有点不流畅，最好重装下系统，之前还以为是4k屏的锅，自从重装了10.15.6之后，流畅多了，而且会自动适应屏幕，不用开启hidpi,会默认缩放到1080p，显示效果非常棒。
 
+# 添加风扇控制驱动，资源来自：
+http://bbs.pcbeta.com/viewthread-1842256-1-1.html
+https://github.com/lgs3137/MSIFanControl
+- 亲测使用正常，与WIN下龙盾的风扇高级设置项的效果一样。
+- 由于是shell的应用(放置在fancontrol文件夹下)，需要在设置-用户与群组-登录项下添加启动脚本，使用可参考fancontrol文件夹fanset.sh里的内容
+   也可以直接将fancontrol文件夹放在/Users下面，然后将fancontrol里的fanset.sh加入到登录里面。
+- 经测试，睡眠唤醒后设置会失效，需要重新设置，推荐可以使用 SleeperX，在里面设置唤醒和盒盖的回调,将fanset.sh里的内容复制到里面
+  来源：https://github.com/HsOjo/SleeperX，亲测有效。
 
 # bios设置：  
       Advanced
