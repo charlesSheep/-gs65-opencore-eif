@@ -11,7 +11,7 @@
 
 # 当前系统版本
 - BigSur 11.3.1
-![image](https://github.com/charlesSheep/-gs65-opencore-eif/blob/master/IMG.png?raw=true)
+![image](https://github.com/charlesSheep/-gs65-opencore-eif/blob/master/%E6%88%AA%E5%B1%8F2021-05-22%20%E4%B8%8B%E5%8D%884.50.00.png?raw=true)
 - EFI引导版本：官方opencore0.6.4 (引导已配置只扫描macos分区，不使用opencore引导win10,故不使用主题。bios默认第一启动为opencore，需要进win在开机时按f11选系统)
 
 # 驱动情况：
@@ -42,8 +42,8 @@
 - 由于更换了4k屏，使用体验应该和xps系列的黑果使用体验相媲美了，而且相比于xps没有多余的不可驱动的硬件，像指纹，读卡器什么的，对强迫症友好，哈哈。。。。 如果打算认真使用黑果，还是非常推荐换4k屏，换屏后动画可能会有点不流畅，最好重装下系统，之前还以为是4k屏的锅，自从重装了10.15.6之后，流畅多了，而且会自动适应屏幕，不用开启hidpi,会默认缩放到1080p，显示效果非常棒。
 
 # 添加风扇控制驱动，资源来自：
-http://bbs.pcbeta.com/viewthread-1842256-1-1.html
-https://github.com/lgs3137/MSIFanControl
+- http://bbs.pcbeta.com/viewthread-1842256-1-1.html
+- https://github.com/lgs3137/MSIFanControl
 - 亲测使用正常，与WIN下龙盾的风扇高级设置项的效果一样。
 - 由于是shell的应用(放置在fancontrol文件夹下)，需要在设置-用户与群组-登录项下添加启动脚本，使用可参考fancontrol文件夹fanset.sh里的内容
    也可以直接将fancontrol文件夹放在/Users下面，然后将fancontrol里的fanset.sh加入到登录里面。
