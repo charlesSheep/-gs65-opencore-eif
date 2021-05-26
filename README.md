@@ -12,7 +12,7 @@
 # 当前系统版本
 - BigSur 11.3.1
 ![image](https://github.com/charlesSheep/-gs65-opencore-eif/blob/master/%E6%88%AA%E5%B1%8F2021-05-22%20%E4%B8%8B%E5%8D%884.50.00.png?raw=true)
-- EFI引导版本：官方opencore0.6.4 (引导已配置只扫描macos分区，不使用opencore引导win10,故不使用主题。bios默认第一启动为opencore，需要进win在开机时按f11选系统)
+- EFI引导版本：官方opencore0.6.9 (引导已配置只扫描macos分区，不使用opencore引导win10,故不使用主题。bios默认第一启动为opencore，需要进win在开机时按f11选系统)
 
 # 驱动情况：
 - 除独显GTX1060无法驱动，以及与其直接相联的DP,HDMI接口无法使用外，其余所有设备基本都完美工作，雷电3接口也支持热插拔(测试使用扩展外接显示器)
