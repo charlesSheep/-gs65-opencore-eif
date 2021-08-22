@@ -46,9 +46,9 @@
 # 添加风扇控制驱动，资源来自：
 - http://bbs.pcbeta.com/viewthread-1842256-1-1.html
 - https://github.com/lgs3137/MSIFanControl
-- 亲测使用正常，与WIN下龙盾的风扇高级设置项的效果一样。
+- 亲测使用正常，与WIN下龙盾的风扇高级设置项的效果一样(但不能设置GPU风扇)。
 - 由于是shell的应用(放置在fancontrol文件夹下)，需要在设置-用户与群组-登录项下添加启动脚本，使用可参考fancontrol文件夹fanset.sh里的内容
-   也可以直接将fancontrol文件夹放在/Users下面，然后将fancontrol里的fanset.sh加入到登录里面。
+   也可以直接将fancontrol文件夹放在/Users下面，然后将fancontrol里的fanset.sh加入到登录项里面。
 - 经测试，睡眠唤醒后设置会失效，需要重新设置，推荐可以使用 SleeperX，在里面设置唤醒和盒盖的回调,将fanset.sh里的内容复制到里面
   来源：https://github.com/HsOjo/SleeperX，亲测有效。
 
@@ -66,13 +66,11 @@
 
      另外，还要：
                 1.关闭cfg lock(实测这是必须的)
-                2.cpu speed shift technology(实测不开时，CPU频率控制更平稳些，在WIN下也是，所以建议不要开这个)
+                2.cpu speed shift technology(非必须，开启似乎响应更快些)
                 3.usb 设置里的 XHCI hand off 开启（必须的，默认应该是开启的） 
                 4.开启雷电接口的设置(不用应该可以不开)
 
-                如果是4k屏，还要：
-                      1.dvmt allocated设置为64m,最大值设置为max
-                      2.above 4g encoding 开启 
-                      3.启动参数里加上-igfxmlr(如果是BIGSUR,需要WEG1.4.6以上，需要额外添加-igfxmpc，igfxcflbklt=1需要替换为-igfxblr)
+                如果是4k屏，还要
+                      1.启动参数里加上-igfxmlr(如果是BIGSUR,需要WEG1.4.6以上，需要额外添加-igfxmpc，igfxcflbklt=1需要替换为-igfxblr)
                      
                 另外建议：使用XTU测试最佳的cpu电压偏移值，并设置到bios中，会让8750h的发热情况得到极大的改善      
