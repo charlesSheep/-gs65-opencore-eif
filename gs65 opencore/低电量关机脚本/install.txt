@@ -1,0 +1,7 @@
+chown root /Library/LaunchDaemonds/lowBatteryShutdown.sh
+chown root /Library/LaunchDaemonds/com.lowBatteryShutdown.plist
+chmod 711 /Library/LaunchDaemonds/lowBatteryShutdown.sh
+chmod 644 /Library/LaunchDaemonds/com.lowBatteryShutdown.plist
+launchctl load /Library/LaunchDaemonds/com.lowBatteryShutdown.plist
+echo '/Library/Logs/lowbat_shutdown.log       644  2     1000 *     J' >> /etc/newsyslog.conf
+
